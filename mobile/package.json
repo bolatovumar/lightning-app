@@ -2,7 +2,9 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start"
+    "start": "react-native start",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "expo-font": "^6.0.1",
@@ -28,12 +30,14 @@
     "react-native-share": "^1.2.1",
     "react-native-svg": "^9.6.2",
     "react-native-unimodules": "^0.5.4",
-    "react-navigation": "^3.11.1"
+    "react-navigation": "^3.11.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "metro-react-native-babel-preset": "0.56.0",
     "prop-types": "^15.7.2",
     "sinon": "^6.1.5"
   },
-  "private": true
+  "private": true,
+  "snyk": true
 }
